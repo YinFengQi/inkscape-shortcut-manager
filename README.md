@@ -18,14 +18,21 @@
 这个快捷键管理器可以监听传入 inkscape 的键盘输入, 并将它们转化为自定义的操作.
 
 
-- **按下组合键可以快速更改选中对象的样式**  <kbd>d</kbd>+<kbd>a</kbd> 对应 **d**otted **a**rrow, <kbd>f</kbd>+<kbd>s</kbd> **f**ills the selection in gray and adds a **s**troke.
+- **按下组合键可以快速更改选中对象的样式**  <kbd>d</kbd>+<kbd>a</kbd> 对应 **d**otted **a**rrow, <kbd>f</kbd>+<kbd>s</kbd> 会 **f**ills the selection in gray and adds a **s**troke.
+-想要 **d**otted and **f**illed, 就按 <kbd>f</kbd> + <kbd>d</kbd>.
+-<kbd>s</kbd>, <kbd>a</kbd>, <kbd>d</kbd>, <kbd>g</kbd>, <kbd>h</kbd>, <kbd>x</kbd>, <kbd>e</kbd>, <kbd>b</kbd>, <kbd>f</kbd>, <kbd>w</kbd> 这些键的组合会给出各种组合样式. 如果想要非组合的样式, 比如单纯的 **d**otted stroke but no filling, 那就按 <kbd>Space</kbd>+<kbd>d</kbd>. 在映射规则里, <kbd>Space</kbd> 用作占位符.
 
--You want a circle that's **d**otted and **f**illed? Press <kbd>f</kbd> + <kbd>d</kbd>. Try pressing combinations of <kbd>s</kbd>, <kbd>a</kbd>, <kbd>d</kbd>, <kbd>g</kbd>, <kbd>h</kbd>, <kbd>x</kbd>, <kbd>e</kbd>, <kbd>b</kbd>, <kbd>f</kbd>, <kbd>w</kbd>. Being able to combine these common styles by pressing key chords feels quite intuitive after a while.
-- **Save custom styles and objects.** Press <kbd>Shift+S</kbd> or <kbd>Shift+A</kbd> to give a style or object a name. Use it by pressing <kbd>s</kbd> or <kbd>a</kbd> and typing the name. For common styles that aren't covered by the key chords, this comes in handy.
-- **Use your editor to write LaTeX.** Pressing <kbd>t</kbd> opens an instance of vim (or any editor you want). Write some LaTeX, close it, and the shortcut manager pastes the text in the figure. Pressing <kbd>Shift+T</kbd> does the same but renders the LaTeX as an svg and adds it to the document.
-- **Ergonomic shortcuts for frequently used functions**. Press <kbd>w</kbd> for pencil, <kbd>x</kbd> to toggle snapping, <kbd>f</kbd> for Bézier, <kbd>z</kbd> to undo, <kbd>Shift</kbd>+<kbd>z</kbd> to delete and <kbd>\`</kbd> to dis/enable the shortcut manager.
 
-For more details and context, feel free to read my [blog post](https://castel.dev/post/lecture-notes-2).
+- **保存自定义的样式和形状.** 按下 <kbd>Shift+S</kbd> 或者 <kbd>Shift+A</kbd> , 然后在弹出窗口内输入名字, 这会保存选中部分的 style 或者 object. 调用它们时, 按下 <kbd>s</kbd> 或 <kbd>a</kbd> 并输入名字 \(无弹出窗口\). 按键映射中没有的样式可以通过这个手动保存.
+
+
+- **用你自己的编辑器插入 LaTeX 公式.** 按下 <kbd>t</kbd> 会打开一个 vim 窗口 \(当然可以配置成你喜欢的编辑器\). 写入 LaTeX 代码并保存, shortcut manager 会自动将它放入 Inkscape 中.
+- 按下 <kbd>Shift+T</kbd> 的操作也类似, 但它会把你所写的公式与 `~/.config/inkscape-shortcut-manager/config.py` 中的 LaTX 模板拼成一个完整可编译的 LaTeX 文件, 并将编译得到的 `.pdf` 文件转换成 `.svg` 文件, 通过剪贴板插入到 Inkscape 内.
+
+  
+- **更顺手的常用功能键盘映射**. 画图时, 右手握着鼠标, Castel 把常用功能都放到了键盘左侧. Press <kbd>w</kbd> for pencil, <kbd>x</kbd> to toggle snapping, <kbd>f</kbd> for Bézier, <kbd>z</kbd> to undo, <kbd>Shift</kbd>+<kbd>z</kbd> to delete and <kbd>\`</kbd> to dis/enable the shortcut manager.
+
+强烈推荐阅读一下 Castel 大神的 [博客文章](https://castel.dev/post/lecture-notes-2), 这篇博客中的按键映射图如下 ![按键对应](https://castel.dev/static/d6340105c5f1f48d6bbbe4ca4d1e7e48/44b06/default-styles-keys2.png)
 
 ## Installing
 
