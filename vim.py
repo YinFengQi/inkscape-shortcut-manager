@@ -9,7 +9,7 @@ from Xlib import X
 def open_vim(self, compile_latex):
     f = tempfile.NamedTemporaryFile(mode='w+', delete=False, suffix='.tex')
 
-    f.write('$$')
+    f.write('$  $')
     f.close()
 
     config['open_editor'](f.name)

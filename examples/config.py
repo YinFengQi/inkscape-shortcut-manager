@@ -18,7 +18,7 @@ def open_editor(filename):
 
 def latex_document(latex):
     return r"""
-        \documentclass[12pt,border=12pt]{standalone}
+        \documentclass{standalone}
         \usepackage{amsfonts,amssymb,amsthm,amsmath,physics,extarrows}
         \begin{document}
     """ + latex + r"\end{document}"
