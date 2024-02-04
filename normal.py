@@ -82,6 +82,9 @@ def handle_single_key(self, ev):
     elif ev == 'Shift+s':
         # Save style mode
         styles.save_style_mode(self)
+    elif ev == 'm':
+        # Select tool (mouse)
+        self.press('s')
     elif ev == 'w':
         # Pencil
         self.press('p')
